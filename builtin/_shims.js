@@ -1,5 +1,5 @@
 
-// In IE the description property of an error is visibel
+// In IE the description property of an error is visible
 if (new Error().hasOwnProperty('description')) {
   var ERROR_PROPERTY_FILTER = function (obj, array) {
     if (Object.prototype.toString.call(obj) === '[object Error]') {
