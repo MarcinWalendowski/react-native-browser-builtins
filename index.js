@@ -1,44 +1,63 @@
+'use strict';
 
-var path = require('path');
+module.exports = {};
+[
+    'global',
+    // 'console',  // provided by react-native
+    'constants',
+    'crypto',
+    'http',
+    'buffer',
+    'os',
+    'vm',
+    'zlib',
+    'assert',
+    'child_process',
+    'cluster',
+    'dgram',
+    'dns',
+    'domain',
+    'events',
+    'fs',
+    'https',
+    'module',
+    'net',
+    'path',
+    'process',
+    'punycode',
+    'querystring',
+    'readline',
+    'repl',
+    'stream',
+    'string_decoder',
+    'sys',
+    'timers',
+    'tls',
+    'tty',
+    'url',
+    'util',
+    '_shims',
+    '_stream_duplex',
+    '_stream_readable',
+    '_stream_writable',
+    '_stream_transform',
+    '_stream_passthrough'
+].forEach(function (key) {
+    module.exports[key] = require('./react-native/' + key + '.js');
+});
 
-// load core modules from builtin dir
-function localModule(name) {
-    return path.resolve(__dirname, 'builtin', name + '.js');
-}
 
 // manually add core which are provided by modules
 module.exports = {
-    "console": require.resolve('console-browserify/'),
-    "constants": require.resolve('constants-browserify/'),
-    "crypto": require.resolve('crypto-browserify/'),
-    "http": require.resolve('http-browserify/'),
-    "buffer": require.resolve('buffer/'),
-    "os": path.resolve(require.resolve('os-browserify'), '..', 'browser.js'),
-    "vm": require.resolve('vm-browserify/'),
-    "zlib": require.resolve('zlib-browserify/'),
-    "assert": require.resolve('assert/'),
-    "child_process": localModule('child_process'),
-    "cluster": localModule('child_process'),
-    "dgram": localModule('dgram'),
-    "dns": localModule('dns'),
-    "domain": require.resolve('domain-browser/'),
-    "events": require.resolve('events/'),
-    "fs": localModule('fs'),
-    "https": localModule('https'),
-    "module": localModule('module'),
-    "net": localModule('net'),
-    "path": require.resolve('path-browserify/'),
-    "process": path.resolve(require.resolve('process/'), '..', 'browser.js'),
-    "punycode":  require.resolve('punycode/'),
-    "querystring": localModule('querystring'),
-    "readline": localModule('readline'),
-    "repl": localModule('repl'),
-    "stream": localModule('stream'),
-    "string_decoder": require.resolve('string_decoder/'),
-    "sys": localModule('sys'),
+    "domain": require('domain-browser'),
+    "events": require('events'),
+    "path": require('path-browserify'),
+    "process": require('process/browser'),
+    "punycode":  require('punycode'),
+    "string_decoder": require('string_decoder'),
     "timers": localModule('timers'),
     "tls": localModule('tls'),
-    "tty": require.resolve('tty-browserify/'),
+    "tty": require('tty-browserify'),
     "url": localModule('url'),
     "util": localModule('util'),
     "_shims": localModule('_shims'),
