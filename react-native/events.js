@@ -3,4 +3,4 @@
  @polyfill
  */
 
-module.exports = require('events');
+module.exports = require('events/events');
