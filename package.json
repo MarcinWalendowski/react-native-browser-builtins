@@ -15,38 +15,75 @@
   ],
   "author": "Barry Shapira <barry.shapira@gmail.com>",
   "contributors": [
-    {"name": "Alex Gorbatchev", "email": "alex.gorbatchev@gmail.com"},
-    {"name": "Andreas Madsen", "email": "amwebdk@gmail.com"},
-    {"name": "Aria Stewart", "email": "aredridel@nbtsc.org"},
-    {"name": "Christian Tellnes", "email": "christian@tellnes.no"},
-    {"name": "Danya Postfactum", "email": "danya.postfactum@gmail.com"},
-    {"name": "Feross Aboukhadijeh", "email": "feross@feross.org"},
-    {"name": "James Halliday", "email": "mail@substack.net"},
-    {"name": "Jared Hanson", "email": "jaredhanson@gmail.com"},
-    {"name": "Julian Gruber", "email": "julian@juliangruber.com"},
-    {"name": "Lance Stout", "email": "lancestout@gmail.com"},
-    {"name": "Patrick Mueller", "email": "pmuellr@yahoo.com"},
-    {"name": "Victor Powell", "email": "vicapow@gmail.com"}
+    {
+      "name": "Alex Gorbatchev",
+      "email": "alex.gorbatchev@gmail.com"
+    },
+    {
+      "name": "Andreas Madsen",
+      "email": "amwebdk@gmail.com"
+    },
+    {
+      "name": "Aria Stewart",
+      "email": "aredridel@nbtsc.org"
+    },
+    {
+      "name": "Christian Tellnes",
+      "email": "christian@tellnes.no"
+    },
+    {
+      "name": "Danya Postfactum",
+      "email": "danya.postfactum@gmail.com"
+    },
+    {
+      "name": "Feross Aboukhadijeh",
+      "email": "feross@feross.org"
+    },
+    {
+      "name": "James Halliday",
+      "email": "mail@substack.net"
+    },
+    {
+      "name": "Jared Hanson",
+      "email": "jaredhanson@gmail.com"
+    },
+    {
+      "name": "Julian Gruber",
+      "email": "julian@juliangruber.com"
+    },
+    {
+      "name": "Lance Stout",
+      "email": "lancestout@gmail.com"
+    },
+    {
+      "name": "Patrick Mueller",
+      "email": "pmuellr@yahoo.com"
+    },
+    {
+      "name": "Victor Powell",
+      "email": "vicapow@gmail.com"
+    }
   ],
   "license": "MIT",
   "dependencies": {
-    "console-browserify": "~1.1.0",
-    "constants-browserify": "~0.0.1",
-    "crypto-browserify": "~3.9.10",
-    "http-browserify": "~1.7.0",
-    "buffer": "~3.0.0",
-    "os-browserify": "~0.1.2",
-    "vm-browserify": "~0.0.4",
-    "zlib-browserify": "~0.0.3",
     "assert": "~1.3.0",
+    "buffer": "~3.5.0",
+    "console-browserify": "~1.1.0",
+    "constants-browserify": "~1.0.0",
+    "crypto-browserify": "~3.9.10",
     "domain-browser": "~1.1.2",
     "events": "~1.0.1",
+    "http-browserify": "~1.7.0",
+    "http-parser-js": "^0.3.0",
     "https-browserify": "~0.0.0",
+    "os-browserify": "~0.1.2",
     "path-browserify": "~0.0.0",
+    "process": "~0.11.2",
+    "punycode": "~1.3.0",
     "string_decoder": "~0.10.0",
     "tty-browserify": "~0.0.0",
-    "process": "~0.10.0",
-    "punycode": "~1.3.0"
+    "vm-browserify": "~0.0.4",
+    "zlib-browserify": "~0.0.3"
   },
   "browser": {
     "console": "console-browserify",
