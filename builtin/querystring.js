@@ -22,7 +22,7 @@
 // Query String Utilities
 
 var QueryString = exports;
-var util = require('util');
+var util = require('./util');
 var Buffer = require('buffer').Buffer;
 
 // If obj.hasOwnProperty has been overridden, then calling
