@@ -3,5 +3,5 @@
  @polyfill
  */
 
-module.exports = require('../node_modules/buffer');
+module.exports = require('buffer');
 global.Buffer = module.exports.Buffer;
